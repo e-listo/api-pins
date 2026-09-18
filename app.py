@@ -6,6 +6,9 @@ from models import db
 
 def create_app():
     app = Flask(__name__)
+    from flask_cors import CORS
+    CORS(app, resources={r"/api/*": {"origins": ["https://pins.dpupkp.my.id"]}}, supports_credentials=True)
+
     app.config.from_object(Config)
     db.init_app(app)
 
