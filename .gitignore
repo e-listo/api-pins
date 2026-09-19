@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*_password*.txt
+*password*.txt
+*.pem
+*.key
+
+# Database dumps and migrations generated during deployment
+*.sql
+*.sql.gz
+*.dump
+backups/
+
+# Shared-hosting runtime
+.htaccess
+.user.ini
+php.ini
+passenger_wsgi.py
+stderr.log
+tmp/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
